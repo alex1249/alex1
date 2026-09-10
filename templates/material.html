@@ -1,0 +1,10 @@
+<h1>{{ material['title'] }}</h1>
+<p>{{ material['date'] }}</p>
+<h2>정리본</h2>
+<p>{{ material['content'] }}</p>
+<h2>원본자료</h2>
+<ul>
+{% for o in originals %}
+  <li><b>{{ o['label'] }}</b>: {{ o['content'] }}</li>
+{% endfor %}
+</ul>
