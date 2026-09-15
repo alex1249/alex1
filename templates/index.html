@@ -4,3 +4,9 @@
   <li><a href="/subjects/{{ s['id'] }}">{{ s['name'] }}</a></li>
 {% endfor %}
 </ul>
+
+<h2>과목 추가</h2>
+<form method="post" action="/subjects">
+  <input type="text" name="name" placeholder="과목명" required>
+  <button type="submit">추가</button>
+</form>

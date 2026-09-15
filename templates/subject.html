@@ -5,3 +5,10 @@
   <li><a href="/materials/{{ m['id'] }}">{{ m['title'] }}</a> ({{ m['date'] }})</li>
 {% endfor %}
 </ul>
+
+<h2>정리본 추가</h2>
+<form method="post" action="/subjects/{{ subject['id'] }}/materials">
+  <input type="text" name="title" placeholder="제목" required><br>
+  <textarea name="content" rows="10" cols="60" placeholder="AI가 정리한 내용을 붙여넣으세요"></textarea><br>
+  <button type="submit">추가</button>
+</form>
